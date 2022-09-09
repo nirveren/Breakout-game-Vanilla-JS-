@@ -37,7 +37,7 @@ let images = {
     paddle: new Image()
 }
 
-// let scoreHigh = ''; 
+ let scoreHigh = []; 
 
 function onImageLoad(e) {
     resetGame();

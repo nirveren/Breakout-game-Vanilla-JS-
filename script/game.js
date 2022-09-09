@@ -150,11 +150,6 @@ function animate(now = 0) {
         update();
         detectCollision();
         detectBrickCollision();
-        let scoreHigh = []; 
-        if (game.score > scoreHigh) {
-            scoreHigh = game.score;
-             localStorage.setItem("KEY_SCORE", scoreHigh);
-         }
         if (isLevelCompleted() || isGameOver()) return;
     }
 
@@ -265,6 +260,10 @@ function detectBrickCollision() {
             if (!directionChanged) {
                 directionChanged = true;
                 detectCollisionDirection(brick);
+            }
+            if (game.score > scoreHigh) {
+                scoreHigh = game.score;
+                localStorage.setItem("KEY_SCORE", scoreHigh);
             }
         }
         

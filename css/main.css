@@ -61,47 +61,16 @@ body {
 footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .score {
     margin-left: 25px;
     font-size: 30px;
     color: #FFD700;
+    margin-bottom: 30px;
 }
 
 .godName { 
     margin-right: 20px;
-}
-
-@media (max-width: 414px) {
-    .title {
-        font-size: 40px;
-    }
-    
-    .main__title { 
-        text-align: center;
-        color: #FFD700;
-        margin-bottom: 50px;
-    }
-    
-    
-    .difficulty {
-        font-size: 30px;
-        text-decoration: none;
-        margin-bottom: 25px;
-        border-radius: 10px;
-        transition: 0.3s;
-    }
-    
-    .score {
-        margin-left: 5px;
-        font-size: 20px;
-        color: #FFD700;
-    }
-    
-    .godName { 
-        margin-right: 10px;
-        margin-right: 5px;
-    }
 }

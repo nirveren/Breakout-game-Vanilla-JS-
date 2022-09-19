@@ -59,8 +59,8 @@ const sounds = {
     brick: new Audio('./sounds/sounds_brick.mp3'),
     gameOver: new Audio('./sounds/sounds_game-over.mp3'),
     levelCompleted: new Audio('./sounds/sounds_level-completed.mp3'),
-    music: new Audio('./sounds/.mp3'),
-    paddle: new Audio('./sounds/sounds_music.mp3')
+    music: new Audio('./sounds/music.mp3'),
+    paddle: new Audio('./sounds/sounds_paddle.mp3')
 }
 
 let brickField = [];
@@ -76,7 +76,7 @@ function play() {
     initBricks();
     game.sfx && sounds.breakout.play();
     // Музло поехало
-    setTimeout(() => game.music && sounds.music.play(), 1);
+    setTimeout(() => game.music && sounds.music.play(), 2000);
 
     animate();
 }

@@ -59,7 +59,7 @@ const sounds = {
     brick: new Audio('./sounds/sounds_brick.mp3'),
     gameOver: new Audio('./sounds/sounds_game-over.mp3'),
     levelCompleted: new Audio('./sounds/sounds_level-completed.mp3'),
-    music: new Audio('./sounds/music.mp3'),
+    music: new Audio('./sounds/sounds__music.mp3'),
     paddle: new Audio('./sounds/sounds_paddle.mp3')
 }
 
@@ -76,7 +76,7 @@ function play() {
     initBricks();
     game.sfx && sounds.breakout.play();
     // Музло поехало
-    setTimeout(() => game.music && sounds.music.play(), 2000);
+    setTimeout(() => game.music && sounds.music.play(), );
 
     animate();
 }
@@ -88,9 +88,9 @@ function resetGame() {
     game.lives = 3;
     game.time = { start: performance.now(), elapsed: 0, refreshRate: 16 };
     const url = new URL(window.location.href)
-    const easyCategory = url.searchParams.get('e');
-    const normCategory = url.searchParams.get('n');
-    const hardCategory = url.searchParams.get('h')
+    const easyCategory = url.searchParams.get('Easy');
+    const normCategory = url.searchParams.get('Normal');
+    const hardCategory = url.searchParams.get('Hard');
     if (normCategory) {
         game.speed = 10
     } if (easyCategory) {

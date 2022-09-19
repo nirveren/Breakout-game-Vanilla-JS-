@@ -7,9 +7,9 @@ let score = document.querySelector("#score");
 
 
 
-const attrEasy = './game.html?e=Easy'
-const attrNorm = './game.html?n=Normal'
-const attrHard = './game.html?h=Hard'
+const attrEasy = './game.html?Easy=c'
+const attrNorm = './game.html?Normal=c'
+const attrHard = './game.html?Hard=c'
 const createEasy = eLink.setAttribute('href', attrEasy)
 const createNorm = nLink.setAttribute('href', attrNorm)
 const createHard = hLink.setAttribute('href', attrHard)
